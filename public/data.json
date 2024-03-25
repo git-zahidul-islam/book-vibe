@@ -1,0 +1,95 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Dating Playbook for Men",
+        "author": "Andrew Ferebee",
+        "images": "https://i.ibb.co/7bzLC47/The-dating-playbook.png",
+        "review": "Long ago, the nonhuman wreths created humans (with whom they can interbreed) as servants, then occupied themselves with killing their hereditary foe, a huge, evil dragon. This caused great destruction, depleted the land of magic, and ultimately failed, after which they disappeared, leaving the world to humans.",
+        "tags": [
+            "phycology",
+            "suspension"
+        ],
+        "publisher": "Andrew Ferebee ",
+        "yearOfPublishing": "2015"
+    },
+    {
+        "bookId": 2,
+        "bookName": "Why Do You Hate Money",
+        "author": "Joey Percia",
+        "images": "https://i.ibb.co/ZYYFYrC/kindpng-7318921.png",
+        "review": "Long ago, the nonhuman wreths created humans (with whom they can interbreed) as servants, then occupied themselves with killing their hereditary foe, a huge, evil dragon. This caused great destruction, depleted the land of magic, and ultimately failed, after which they disappeared, leaving the world to humans.",
+        "totalPages": 228,
+        "rating": 4.7,
+        "category": "fitness marketing",
+        "tags": [
+            "fitness marketing",
+            "Money"
+        ],
+        "publisher": "Joey Percia",
+        "yearOfPublishing": "2017"
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Hate U Give",
+        "author": "Angie Thomas",
+        "images": "https://i.ibb.co/6XGVjNP/kindpng-1064993.png",
+        "review": "Long ago, the nonhuman wreths created humans (with whom they can interbreed) as servants, then occupied themselves with killing their hereditary foe, a huge, evil dragon. This caused great destruction, depleted the land of magic, and ultimately failed, after which they disappeared, leaving the world to humans.",
+        "totalPages": 444,
+        "rating": 4.5,
+        "category": "drama",
+        "tags": [
+            "drama",
+            "Film"
+        ],
+        "publisher": "Balzer + Bray",
+        "yearOfPublishing": "2017"
+    },
+    {
+        "bookId": 4,
+        "bookName": "The Scholarship Monthly Planner",
+        "author": "Marianne Ragins",
+        "images": "https://i.ibb.co/Vv9TFgm/kindpng-4022054-1.png",
+        "review": "Long ago, the nonhuman wreths created humans (with whom they can interbreed) as servants, then occupied themselves with killing their hereditary foe, a huge, evil dragon. This caused great destruction, depleted the land of magic, and ultimately failed, after which they disappeared, leaving the world to humans.",
+        "totalPages": 28,
+        "rating": 4.9,
+        "category": "Study",
+        "tags": [
+            "Studey",
+            "Scholarship"
+        ],
+        "publisher": "Marianne Ragins",
+        "yearOfPublishing": "2022"
+    },
+    {
+        "bookId": 5,
+        "bookName": "Loving Jesus More",
+        "author": "Philip Graham Ryken",
+        "images": "https://i.ibb.co/YcpSSPt/kindpng-2193744-1.png",
+        "review": "Long ago, the nonhuman wreths created humans (with whom they can interbreed) as servants, then occupied themselves with killing their hereditary foe, a huge, evil dragon. This caused great destruction, depleted the land of magic, and ultimately failed, after which they disappeared, leaving the world to humans.",
+        "totalPages": 176,
+        "rating": 4.5,
+        "category": "God's love",
+        "tags": [
+            "God's love",
+            "Love"
+        ],
+        "publisher": "Philip Graham Ryken",
+        "yearOfPublishing": "2014"
+    },
+    {
+        "bookId": 6,
+        "bookName": "Spine of the Dragon",
+        "author": " Kevin J. Anderson",
+        "images": "https://i.ibb.co/2jggR4L/kindpng-4945926-1.png",
+        "review": "Long ago, the nonhuman wreths created humans (with whom they can interbreed) as servants, then occupied themselves with killing their hereditary foe, a huge, evil dragon. This caused great destruction, depleted the land of magic, and ultimately failed, after which they disappeared, leaving the world to humans. Many years later, two continents, the Commonwealth of the Three Kingdoms and Ishara, fought bloody wars; desultory raids across the sea continue. Now, astonishingly, Queen Voo and her sandwreths show up to inform Adan Starfall, king of Suderra, that they are resuming their quest. Somehow, they still have magic; worse, they're going to fight Queen Onn and her frostwreths first. Voo offers Adan an alliance against the frostwreths. What to do? Well, nobody's ever accused Anderson of writing bleak, hard-edged realism, and the oft-repeated mantra  is as profound as he gets. Instead, he builds momentum with a measured but relentless pace, introducing multiple characters and points of view in different locations and steadily increasing complications with glimpses of plots within plots, motives behind motives, and secrets inside secrets. Thus we learn of Empra Iluris of Ishara and her dangerously belligerent rival, Priestlord Klovus. Blood-magic halfbreed warriors called Brava are sworn to protect the Commonwealth and Konag (high king) Conndur, whose son and heir, Mandan, has no interest in statecraft and prefers to paint portraits. Elliel, an outcast Brava, labors in the mines where the wreths' dragon probably slumbers. And so forth. Piecemeal, it's undistinguished. Aggregated, it's seductive.",
+        "totalPages": 519,
+        "rating": 4.8,
+        "category": "vengeance",
+        "tags": [
+            "sorcery",
+            "vengeance"
+        ],
+        "publisher": " Kevin J. Anderson",
+        "yearOfPublishing": "2019"
+    }
+]
