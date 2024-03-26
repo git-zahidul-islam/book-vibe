@@ -6,12 +6,14 @@ import Home from './Pages/Home/Home.jsx'
 import ListedBooks from './Pages/ListedBooks/ListedBooks.jsx'
 import PageToRead from './Pages/PageToRead/PageToRead.jsx'
 import Root from './Pages/Root/Root.jsx'
+import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
 
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,
