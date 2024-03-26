@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
@@ -18,9 +18,9 @@ const Nav = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link to={"/"} className="px-4 py-2 text-xl font-bold border rounded border-green-500 text-green-600">Home</Link></li>
-                    <li><Link to={"/listedBooks"} className="px-4 py-2 text-xl  text-gray-600">Listed Pages</Link></li>
-                    <li><Link to={"/pageToRead"} className="px-4 py-2 text-xl  text-gray-600">Page To Read</Link></li>
+                    <li><NavLink to={"/"} className={`px-4 py-2 text-xl ${({ isActive }) => isActive ? 'text-red-600' : 'text-white'}`}>Home</NavLink></li>
+                    <li><NavLink to={"/listedBooks"} className={`px-4 py-2 text-xl ${({ isActive }) => isActive ? 'text-red-600' : 'text-white'}`}>Listed Pages</NavLink></li>
+                    <li><NavLink to={"/pageToRead"} className={`px-4 py-2 text-xl ${({ isActive }) => isActive ? 'text-red-600' : 'text-white'}`}>Page To Read</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end flex gap-2">
