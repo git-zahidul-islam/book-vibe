@@ -1,4 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveRead, saveWishList } from "../../Utilities/getData";
+
+
 
 const BookDetails = () => {
     const { id } = useParams()
@@ -7,12 +10,12 @@ const BookDetails = () => {
 
     const { bookName, author, category, review, tags, images, totalPages, yearOfPublishing, rating, publisher } = details;
 
-    const handleRead = (details) => {
-        console.log(details)
+    const handleRead = (read) => {
+        saveRead(read)
     }
 
-    const handleWish = (details) =>{
-        console.log(details)
+    const handleWish = (wish) =>{
+        saveWishList(wish)
     }
 
     return (

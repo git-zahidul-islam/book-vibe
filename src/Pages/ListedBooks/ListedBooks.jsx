@@ -31,7 +31,7 @@ const ListedBooks = () => {
                     <span>Wishlist Books</span>
                 </Link>
             </div>
-
+            
             {/* outlet here */}
             <Outlet></Outlet>
         </div>
