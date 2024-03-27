@@ -7,7 +7,13 @@ const BookDetails = () => {
 
     const { bookName, author, category, review, tags, images, totalPages, yearOfPublishing, rating, publisher } = details;
 
+    const handleRead = (details) => {
+        console.log(details)
+    }
 
+    const handleWish = (details) =>{
+        console.log(details)
+    }
 
     return (
         <div>
@@ -45,8 +51,8 @@ const BookDetails = () => {
                             </div>
                         </div>
                         <div className="flex flex-row gap-4">
-                            <button className="rounded-xl border-2 px-4 py-5 border-[#1313134D]">Read More</button>
-                            <button className="rounded-xl border-2 px-4 py-5 bg-[#50B1C9] border-[#50B1C9]">Wishlist</button>
+                            <button onClick={() => handleRead(details)} className="rounded-xl border-2 px-4 py-5 border-[#1313134D]">Read</button>
+                            <button onClick={() => handleWish(details)} className="rounded-xl border-2 px-4 py-5 bg-[#50B1C9] border-[#50B1C9]">Wishlist</button>
                         </div>
                     </div>
                 </div>
