@@ -6,12 +6,15 @@ import { getRead } from "../../Utilities/getData";
 import ReadCard from "./ReadCard";
 
 const ReadBooks = () => {
+    // for ReadCard
     const [read, setRead] = useState([]);
-
     useEffect(() => {
         const loadRead = getRead()
         setRead(loadRead)
     }, [])
+    // for sorting
+    
+
 
 
     return (
