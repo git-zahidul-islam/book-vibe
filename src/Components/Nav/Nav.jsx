@@ -17,7 +17,7 @@ const Nav = () => {
                         <li><NavLink to={"/aboutMe"}>About Us</NavLink></li>
                     </ul>
                 </div>
-                <Link to={'/'} className="text-2xl font-bold">Book Vibe</Link>
+                <Link to={'/'} className="lg:text-4xl text-2xl font-bold text-[#131313]">Book Vibe</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="flex gap-4">
@@ -29,8 +29,8 @@ const Nav = () => {
                 </ul>
             </div>
             <div className="navbar-end flex gap-2">
-                <a className="btn btn-primary">Sign In</a>
-                <a className="btn btn-success">Sign Up</a>
+                <button className="px-[18px] py-[20px] text-lg font-semibold text-white rounded-lg bg-[#23BE0A]">Sign In</button>
+                <button className="px-[18px] py-[20px] text-lg font-semibold text-white rounded-lg bg-[#59C6D2]">Sign Up</button>
             </div>
         </div>
     );
