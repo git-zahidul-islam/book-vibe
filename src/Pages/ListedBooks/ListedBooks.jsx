@@ -7,9 +7,9 @@ const ListedBooks = () => {
 
 
     return (
-        <div className="">
+        <div>
             <h1 className="text-xl text-center font-bold text-[#131313] bg-[#1313130D] py-8 rounded-2xl mt-5">Books</h1>
-            <div className="mt-24">
+            <div className="mt-8">
                 <div className="flex items-center sm:justify-start overflow-x-auto overflow-y-hidden flex-nowrap">
                     <Link
                         onClick={() => setTabIndex(0)}

@@ -46,13 +46,15 @@ const ReadBooks = () => {
 
     return (
         <div className="space-y-5">
-            <div className="dropdown dropdown-hover absolute lg:left-[640px] left-[200px] top-[225px]">
-                <div tabIndex={0} role="button" className="btn m-1 text-lg bg-[#23BE0A] text-white">Sort By<RiArrowDropDownLine /></div>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box">
-                    <li onClick={() => handleBookFilter('rating')}><a>Rating</a></li>
-                    <li onClick={() => handleBookFilter('pages')}><a>Pages</a></li>
-                    <li onClick={() => handleBookFilter('year')}><a>Publish of Year</a></li>
-                </ul>
+            <div className="flex justify-center mt-5">
+                <div className="dropdown dropdown-hover">
+                    <div tabIndex={0} role="button" className="btn m-1 text-lg bg-[#23BE0A] text-white">Sort By<RiArrowDropDownLine /></div>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box">
+                        <li onClick={() => handleBookFilter('rating')}><a>Rating</a></li>
+                        <li onClick={() => handleBookFilter('pages')}><a>Pages</a></li>
+                        <li onClick={() => handleBookFilter('year')}><a>Publish of Year</a></li>
+                    </ul>
+                </div>
             </div>
 
             {
