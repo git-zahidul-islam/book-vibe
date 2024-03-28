@@ -29,8 +29,8 @@ const Nav = () => {
                 </ul>
             </div>
             <div className="navbar-end flex gap-2">
-                <button className="px-[18px] py-[20px] text-lg font-semibold text-white rounded-lg bg-[#23BE0A]">Sign In</button>
-                <button className="px-[18px] py-[20px] text-lg font-semibold text-white rounded-lg bg-[#59C6D2]">Sign Up</button>
+                <button className="px-6 py-4 text-lg font-semibold text-white rounded-lg bg-[#23BE0A]">Sign In</button>
+                <button className="px-6 py-4 text-lg font-semibold text-white rounded-lg bg-[#59C6D2]">Sign Up</button>
             </div>
         </div>
     );

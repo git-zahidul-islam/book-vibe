@@ -23,11 +23,11 @@ const WishlistBooks = () => {
 
     useEffect(() => {
         const storeRead = getWishList()
-        if(books.length){
+        if (books.length) {
             const readBooks = [];
-            for(const id of storeRead){
+            for (const id of storeRead) {
                 const book = find((book) => book.bookId === id)
-                if(book){
+                if (book) {
                     readBooks.push(book)
                 }
             }
@@ -38,7 +38,7 @@ const WishlistBooks = () => {
 
     return (
         <div className="mt-5 space-y-5">
-            <div className="dropdown dropdown-hover absolute lg:left-[640px] left-[250px] top-52">
+            <div className="dropdown dropdown-hover absolute lg:left-[640px] left-[200px] top-[225px]">
                 <div tabIndex={0} role="button" className="btn m-1 text-lg bg-[#23BE0A] text-white">Sort By<RiArrowDropDownLine /></div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box">
                     <li onClick={() => handleBookFilter('rating')}><a>Rating</a></li>
