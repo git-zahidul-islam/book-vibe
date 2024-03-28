@@ -14,6 +14,7 @@ const getPath = (x, y, width, height) => {
 };
 
 const TriangleBar = (props) => {
+    // eslint-disable-next-line react/prop-types
     const { fill, x, y, width, height } = props;
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
 };
@@ -21,9 +22,7 @@ const TriangleBar = (props) => {
 
 const PageToRead = () => {
     const [readBook, setReadBook] = useState([])
-    console.log(readBook)
-
-
+   
     useEffect(() => {
         const loadData = getRead()
         setReadBook(loadData)

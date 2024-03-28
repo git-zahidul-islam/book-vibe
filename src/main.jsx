@@ -11,6 +11,8 @@ import BookDetails from './Pages/BookDetails/BookDetails.jsx'
 import ReadBooks from './Components/ReadBooks/ReadBooks.jsx'
 import WishlistBooks from './Components/WishlistBooks/WishlistBooks.jsx'
 import { ToastContainer } from 'react-toastify';
+import RequestBook from './Pages/RequestBook/RequestBook.jsx'
+import AboutMe from './Pages/AboutMe/AboutMe.jsx'
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,14 @@ const router = createBrowserRouter([
         path: "/book/:id",
         element: <BookDetails></BookDetails>,
         loader: () => fetch('/data.json'),
+      },
+      {
+        path: "/requestBook",
+        element: <RequestBook></RequestBook>
+      },
+      {
+        path: "/aboutMe",
+        element: <AboutMe></AboutMe>
       }
     ]
   }
