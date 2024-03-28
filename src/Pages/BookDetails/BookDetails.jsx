@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveRead, saveWishList } from "../../Utilities/getData";
+import { getRead, saveRead, saveWishList } from "../../Utilities/getData";
+import { toast } from "react-toastify";
 
 
 
@@ -7,7 +8,7 @@ const BookDetails = () => {
     const { id } = useParams()
     const bookDetails = useLoaderData()
     const details = bookDetails.find(book => book.bookId === parseInt(id))
-
+    const detailsId = details.bookId
 
     const { bookName, author, category, review, tags, images, totalPages, yearOfPublishing, rating, publisher } = details;
 
@@ -16,7 +17,14 @@ const BookDetails = () => {
     }
 
     const handleWish = (wish) => {
-        saveWishList(wish)
+        const localStorage = getRead()
+        const localId  = localStorage.map(id => id.bookId)
+        if(localId.includes(detailsId)){
+            toast.error('already read')
+        }
+        else{
+            saveWishList(wish)
+        }
     }
 
     return (

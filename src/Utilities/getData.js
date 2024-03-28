@@ -35,10 +35,13 @@ export const getWishList = () => {
 export const saveWishList = (wish) =>{
     let wishList = getWishList()
     const isExist = wishList.find(w => w.bookId === wish.bookId);
-    if(isExist){
-        return toast.error('already added wishlist')
+    if(!isExist){
+        wishList.push(wish)
+        localStorage.setItem('wishList', JSON.stringify(wishList));
+        toast.success('Successful added wishlist')
     }
-    wishList.push(wish)
-    localStorage.setItem('wishList', JSON.stringify(wishList));
-    toast.success('Successful added wishlist')
+    else{
+        toast.error('already added wishlist')
+    } 
+        
 }
