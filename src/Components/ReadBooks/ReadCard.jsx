@@ -8,8 +8,8 @@ const ReadCard = ({ read }) => {
     const { bookId, bookName, author, category, tags, images, totalPages, yearOfPublishing, rating, publisher } = read
 
     return (
-        <div className='flex gap-6 border-2 p-4 rounded-xl'>
-            <div className='bg-[#1313130D] w-60 h-56 flex items-center justify-center rounded-xl'>
+        <div className='flex md:flex-row flex-col gap-6 border-2 p-4 rounded-xl'>
+            <div className='bg-[#1313130D] md:w-60 w-full h-56 flex items-center justify-center rounded-xl'>
                 <img src={images} alt="images" />
             </div>
             <div className='flex-1 space-y-2'>

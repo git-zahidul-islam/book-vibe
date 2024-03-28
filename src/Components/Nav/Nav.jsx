@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
@@ -9,12 +9,12 @@ const Nav = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>Listed Book</a></li>
-                        <li><a>Pages to Read</a></li>
+                        <li><NavLink to={"/"}>Home</NavLink></li>
+                        <li><NavLink to={"/listedBooks"}>Listed Book</NavLink></li>
+                        <li><NavLink to={"/pageToRead"}>Pages to Read</NavLink></li>
                     </ul>
                 </div>
-                <a className="text-2xl font-bold">Book Vibe</a>
+                <Link to={'/'} className="text-2xl font-bold">Book Vibe</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
