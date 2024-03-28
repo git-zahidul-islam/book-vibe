@@ -2,9 +2,10 @@ import PropTypes from 'prop-types';
 import { IoLocationOutline } from "react-icons/io5";
 import { FaUserFriends } from "react-icons/fa";
 import { MdOutlineFindInPage } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
-const ReadCard = ({read}) => {
-    const { bookName, author, category, tags, images, totalPages, yearOfPublishing, rating, publisher } = read
+const ReadCard = ({ read }) => {
+    const { bookId, bookName, author, category, tags, images, totalPages, yearOfPublishing, rating, publisher } = read
 
     return (
         <div className='flex gap-6 border-2 p-4 rounded-xl'>
@@ -29,7 +30,7 @@ const ReadCard = ({read}) => {
                 <div className='flex gap-5'>
                     <h1 className='px-5 text-base font-medium rounded-3xl py-3 text-[#328EFF] bg-[#328EFF26]'>Category: {category}</h1>
                     <h1 className='px-5 text-base font-medium rounded-3xl py-3 text-[#FFAC33] bg-[#FFAC3326]'>Rating: {rating}</h1>
-                    <p className=' px-5 text-lg font-semibold rounded-3xl py-3 text-white bg-[#23BE0A]'>view Details</p>
+                    <Link to={`/book/${bookId}`}><button className=' px-5 text-lg font-semibold rounded-3xl py-3 text-white bg-[#23BE0A]'>view Details</button></Link>
                 </div>
             </div>
         </div>
