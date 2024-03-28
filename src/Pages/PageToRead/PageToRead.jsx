@@ -22,7 +22,7 @@ const TriangleBar = (props) => {
 
 const PageToRead = () => {
     const [readBook, setReadBook] = useState([])
-   
+
     useEffect(() => {
         const loadData = getRead()
         setReadBook(loadData)
@@ -52,7 +52,7 @@ const PageToRead = () => {
                     </Bar>
                 </BarChart>
             </ResponsiveContainer>
-            
+
         </div>
     );
 };
