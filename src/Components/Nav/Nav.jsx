@@ -28,9 +28,9 @@ const Nav = () => {
                     <li><NavLink to={"/aboutMe"} className={`text-xl`}>About Us</NavLink></li>
                 </ul>
             </div>
-            <div className="navbar-end flex gap-2">
-                <button className="px-6 py-4 text-lg font-semibold text-white rounded-lg bg-[#23BE0A]">Sign In</button>
-                <button className="px-6 py-4 text-lg font-semibold text-white rounded-lg bg-[#59C6D2]">Sign Up</button>
+            <div className="navbar-end gap-2">
+                <button className="lg:px-6 px-3 lg:py-4 py-2 lg:text-lg text-base font-semibold text-white rounded-lg bg-[#23BE0A]">Sign In</button>
+                <button className="lg:px-6 px-3 lg:py-4 py-2 lg:text-lg text-base font-semibold text-white rounded-lg bg-[#59C6D2]">Sign Up</button>
             </div>
         </div>
     );

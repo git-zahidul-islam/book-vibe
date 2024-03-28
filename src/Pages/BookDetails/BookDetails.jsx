@@ -8,13 +8,14 @@ const BookDetails = () => {
     const bookDetails = useLoaderData()
     const details = bookDetails.find(book => book.bookId === parseInt(id))
 
+
     const { bookName, author, category, review, tags, images, totalPages, yearOfPublishing, rating, publisher } = details;
 
     const handleRead = (read) => {
         saveRead(read)
     }
 
-    const handleWish = (wish) =>{
+    const handleWish = (wish) => {
         saveWishList(wish)
     }
 
